@@ -70,11 +70,13 @@ class _SixDigitDisplayState extends State<SixDigitDisplay> {
                 } else if (index == 9) {
                   return Container();
                 } else {
-                  return FlatButton(
-                    shape: RoundedRectangleBorder(
+                  return TextButton(
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.grey.shade300, shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    color: Colors.grey.shade300,
+                    ),
+
                     onPressed: () => onClick(index),
                     child: Text(
                       index == 10 ? '0' : '${index + 1}',

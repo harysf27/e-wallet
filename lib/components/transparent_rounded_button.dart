@@ -34,8 +34,10 @@ class TransparentRoundedButton extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(29),
           ),
-          child: FlatButton(
-            padding: EdgeInsets.all(19),
+          child: TextButton(
+            style: TextButton.styleFrom(
+              padding: EdgeInsets.all(19),
+            ),
             onPressed: press,
             child: Text(
               title,
